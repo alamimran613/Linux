@@ -51,11 +51,11 @@ sudo cp -v /etc/fstab /etc/fstab.bak
 # Step 10: Open /etc/fstab file and make an entry in the following format.
         # device_name mount_point file_system_type fs_mntops fs_freq fs_passno
 
- # Example: /dev/xvdf       /external-volume   xfs    defaults        0       0
+ # Example: /dev/xvdf       /external-volume   xfs    defaults,nofail 0  0
 
  # Then save and close the file or you can use below command to append this line direct into /etc/fstab file
 
-echo "/dev/xvdf  /external-volume  xfs  defaults  0  0" | sudo tee -a /etc/fstab
+echo "/dev/xvdf  /external-volume  xfs  defaults,nofail  0  0" | sudo tee -a /etc/fstab
 
 # Step 11: Execute the following command to check if the fstab file has any errors.
 
