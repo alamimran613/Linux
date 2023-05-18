@@ -30,8 +30,12 @@ sudo mount /dev/xvdf /external-volume
 
 # Step 7: cd into data directory and check the disk space to validate the volume mount.
 
-# cd /data
-# du -h
+# cd /external-volume
+# df -h .  
+
+#or
+
+df -h /external-volume
 
 # Step 8: unmount the volume then you can use below command and verify using lsblk command
 

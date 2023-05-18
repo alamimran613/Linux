@@ -32,7 +32,11 @@ sudo mount /dev/xvdf /data/
 # Step 7: cd into data directory and check the disk space to validate the volume mount.
 
 # cd /data
-# du -h
+# df -h .
+
+#or
+
+df -h /data
 
 # Step 8: unmount the volume then you can use below command and verify using lsblk command
 
