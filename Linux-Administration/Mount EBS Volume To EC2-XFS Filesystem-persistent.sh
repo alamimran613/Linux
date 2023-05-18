@@ -71,9 +71,9 @@ lsblk
 
 sudo chown -R ec2-user:ec2-user /external-volume
 
-du -h /data
+df -h /external-volume
 
-ls -l /data
+ls -l /external-volume
 
 # Now, on every reboot, the extra EBS volumes will get mounted automatically.
 

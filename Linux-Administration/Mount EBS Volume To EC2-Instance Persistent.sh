@@ -72,7 +72,7 @@ lsblk
 
 sudo chown -R ec2-user:ec2-user /data
 
-du -h /data
+df -h /data
 
 ls -l /data
 
