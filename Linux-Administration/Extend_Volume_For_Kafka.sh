@@ -2,6 +2,7 @@
 # 2. When our volume 100% used then out kafka brokers will be down.
 
 ################## Extend Volume and Restart Kakfa ######################
+
 # 3. Go to AWS Console and "Modify Volume" for increase size
 # 4. backup every broker's data 
 # 5(a). Use below command for "xfs" file system for FileSystem Resize
@@ -14,5 +15,6 @@
 # 7. Restart all brokers one by one
 
 ############### Monitor #################
+
 Make sure to setup monitor machine for easy to use and understand Backend works
 eg:- Prometheus, Grafana, Node Exporter, Kafka Manager and whatever you needed
