@@ -10,6 +10,7 @@ sudo growpart /dev/xvda 1
 
 # 3. Verify that the partition has been extended. Use the lsblk command. The partition size should now be equal to the volume size.
 sudo lsblk
+
 # 4. Get the name, size, type, and mount point for the file system that you need to extend. Use the df -hT command.
 df -hT
 
