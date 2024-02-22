@@ -34,7 +34,7 @@ firewall-cmd --add-service=http
 # To remove a service
 firewall-cmd --remove-service=http
 
-# To reload the firewalld configuration, This will remove temporary added services
+# To reload the firewalld configuration, This will remove temporary added services or reload the configuration.
 firewall-cmd --reload
 
 # To add or remove a service permanently
@@ -62,6 +62,8 @@ firewall-cmd --add-rich-rule='rule family="ipv4" source address=“192.168.0.25"
 firewall-cmd --add-icmp-block-inversion
 firewall-cmd --remove-icmp-block-inversion
 
-# To block outgoing traffic to a specific website/IP address
-host -t a www.facebook.com # For find IP address
+# To block/ubblock outgoing traffic to a specific website/IP address
+host -t a www.facebook.com # For find IP address, or ping the website for get IP
 firewall-cmd --direct --add-rule ipv4 filter OUTPUT 0 -d 31.13.71.36 -j DROP
+firewall-cmd --direct --remove-rule ipv4 filter OUTPUT 0 -d 31.13.71.36 -j DROP
+
